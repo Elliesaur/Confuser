@@ -1,0 +1,203 @@
+﻿<Page x:Class="Confuser.Success"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:controls="clr-namespace:System.Windows.Controls"
+    Title="Success">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40px"/>
+            <RowDefinition Height="5px"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Border Grid.Row="0" Grid.RowSpan="3" Padding="5">
+            <Canvas VerticalAlignment="Center" HorizontalAlignment="Center" Opacity="0.2">
+                <Canvas.Resources>
+                    <LinearGradientBrush x:Key="linearGradient3436" MappingMode="RelativeToBoundingBox" StartPoint="0,0" EndPoint="1,1">
+                        <GradientStop Color="#FFFFFFFF" Offset="0"/>
+                        <GradientStop Color="#00FFFFFF" Offset="1"/>
+                    </LinearGradientBrush>
+                    <LinearGradientBrush x:Key="linearGradient3415" MappingMode="RelativeToBoundingBox" StartPoint="0,0" EndPoint="1,1">
+                        <GradientStop Color="#FFF0FF80" Offset="0"/>
+                        <GradientStop Color="#00F0FF80" Offset="1"/>
+                    </LinearGradientBrush>
+                    <LinearGradientBrush x:Key="linearGradient2998" MappingMode="RelativeToBoundingBox" StartPoint="0,0" EndPoint="1,1">
+                        <GradientStop Color="#FFFFFFFF" Offset="0"/>
+                        <GradientStop Color="#00FFFFFF" Offset="1"/>
+                    </LinearGradientBrush>
+                    <LinearGradientBrush x:Key="linearGradient2981" MappingMode="RelativeToBoundingBox" StartPoint="0,0" EndPoint="1,1">
+                        <GradientStop Color="#FF001400" Offset="0"/>
+                        <GradientStop Color="#00001400" Offset="1"/>
+                    </LinearGradientBrush>
+                    <LinearGradientBrush x:Key="linearGradient2971" MappingMode="RelativeToBoundingBox" StartPoint="0,0" EndPoint="1,1">
+                        <GradientStop Color="#FFBFFFBF" Offset="0"/>
+                        <GradientStop Color="#00BFFFBF" Offset="1"/>
+                    </LinearGradientBrush>
+                    <LinearGradientBrush x:Key="linearGradient2956" MappingMode="RelativeToBoundingBox" StartPoint="0,0" EndPoint="1,1">
+                        <GradientStop Color="#FF003100" Offset="0"/>
+                        <GradientStop Color="#FF008C00" Offset="1"/>
+                    </LinearGradientBrush>
+                    <LinearGradientBrush x:Key="linearGradient2948" MappingMode="RelativeToBoundingBox" StartPoint="0,0" EndPoint="1,1">
+                        <GradientStop Color="#FF66F515" Offset="0"/>
+                        <GradientStop Color="#FF002E00" Offset="1"/>
+                    </LinearGradientBrush>
+                    <LinearGradientBrush x:Key="XMLID_2_" MappingMode="Absolute" StartPoint="64.000504,113" EndPoint="64.000504,29.0005">
+                        <GradientStop Color="#FF00BF00" Offset="0"/>
+                        <GradientStop Color="#FF009300" Offset="1"/>
+                        <LinearGradientBrush.Transform>
+                            <MatrixTransform Matrix="0.8571431,0,0,0.8571431,9.1428301,-0.804281"/>
+                        </LinearGradientBrush.Transform>
+                    </LinearGradientBrush>
+                    <RadialGradientBrush x:Key="radialGradient2954" MappingMode="Absolute" Center="54.537579,77.542084" GradientOrigin="54.537579,99.883759" RadiusX="48.000004" RadiusY="48.000004">
+                        <GradientStop Color="#FF66F515" Offset="0"/>
+                        <GradientStop Color="#FF002E00" Offset="1"/>
+                        <RadialGradientBrush.Transform>
+                            <MatrixTransform Matrix="1.3117247,5.8470212e-8,-4.3852649e-8,0.9837933,-16.905997,1.313725"/>
+                        </RadialGradientBrush.Transform>
+                    </RadialGradientBrush>
+                    <LinearGradientBrush x:Key="linearGradient2962" MappingMode="Absolute" StartPoint="89.090881,103.89701" EndPoint="89.090881,30.849478">
+                        <GradientStop Color="#FF003100" Offset="0"/>
+                        <GradientStop Color="#FF008C00" Offset="1"/>
+                        <LinearGradientBrush.Transform>
+                            <TranslateTransform X="0" Y="4"/>
+                        </LinearGradientBrush.Transform>
+                    </LinearGradientBrush>
+                    <LinearGradientBrush x:Key="linearGradient2977" MappingMode="Absolute" StartPoint="83.324677,24.0625" EndPoint="83.324677,89.99453">
+                        <GradientStop Color="#FFBFFFBF" Offset="0"/>
+                        <GradientStop Color="#00BFFFBF" Offset="1"/>
+                        <LinearGradientBrush.Transform>
+                            <TranslateTransform X="-2.3931686e-5" Y="4"/>
+                        </LinearGradientBrush.Transform>
+                    </LinearGradientBrush>
+                    <RadialGradientBrush x:Key="radialGradient2987" MappingMode="Absolute" Center="52.791927,95.459297" GradientOrigin="53.15992,87.08094" RadiusX="52.000004" RadiusY="52.000004">
+                        <GradientStop Color="#FF001400" Offset="0"/>
+                        <GradientStop Color="#00001400" Offset="1"/>
+                        <RadialGradientBrush.Transform>
+                            <MatrixTransform Matrix="0.5646619,8.5323328e-8,-1.386601e-7,0.9176397,24.424169,0.1439155"/>
+                        </RadialGradientBrush.Transform>
+                    </RadialGradientBrush>
+                    <RadialGradientBrush x:Key="radialGradient3004" MappingMode="Absolute" Center="99.765625,29.374895" GradientOrigin="99.765625,29.374895" RadiusX="3.015625" RadiusY="3.015625">
+                        <GradientStop Color="#FFFFFFFF" Offset="0"/>
+                        <GradientStop Color="#00FFFFFF" Offset="1"/>
+                        <RadialGradientBrush.Transform>
+                            <MatrixTransform Matrix="1.9646726,3.4242959e-7,-1.0414508e-6,5.9752716,-96.241137,-146.14811"/>
+                        </RadialGradientBrush.Transform>
+                    </RadialGradientBrush>
+                    <RadialGradientBrush x:Key="radialGradient3256" MappingMode="Absolute" Center="99.765625,29.374895" GradientOrigin="99.765625,29.374895" RadiusX="3.015625" RadiusY="3.015625">
+                        <GradientStop Color="#FFFFFFFF" Offset="0"/>
+                        <GradientStop Color="#00FFFFFF" Offset="1"/>
+                        <RadialGradientBrush.Transform>
+                            <MatrixTransform Matrix="1.9646726,3.4242959e-7,-1.0414508e-6,5.9752716,-96.241137,-146.14811"/>
+                        </RadialGradientBrush.Transform>
+                    </RadialGradientBrush>
+                    <RadialGradientBrush x:Key="radialGradient3288" MappingMode="Absolute" Center="99.765625,29.374895" GradientOrigin="99.765625,29.374895" RadiusX="3.015625" RadiusY="3.015625">
+                        <GradientStop Color="#FFFFFFFF" Offset="0"/>
+                        <GradientStop Color="#00FFFFFF" Offset="1"/>
+                        <RadialGradientBrush.Transform>
+                            <MatrixTransform Matrix="1.9646726,3.4242959e-7,-1.0414508e-6,5.9752716,-167.24116,-126.14811"/>
+                        </RadialGradientBrush.Transform>
+                    </RadialGradientBrush>
+                    <RadialGradientBrush x:Key="radialGradient3292" MappingMode="Absolute" Center="99.765625,29.374895" GradientOrigin="99.765625,29.374895" RadiusX="3.015625" RadiusY="3.015625">
+                        <GradientStop Color="#FFFFFFFF" Offset="0"/>
+                        <GradientStop Color="#00FFFFFF" Offset="1"/>
+                        <RadialGradientBrush.Transform>
+                            <MatrixTransform Matrix="1.9646726,3.4242959e-7,-1.0414508e-6,5.9752716,-96.241137,-146.14811"/>
+                        </RadialGradientBrush.Transform>
+                    </RadialGradientBrush>
+                    <LinearGradientBrush x:Key="linearGradient3421" MappingMode="Absolute" StartPoint="71.603867,96.884026" EndPoint="71.603867,47.378731">
+                        <GradientStop Color="#FFF0FF80" Offset="0"/>
+                        <GradientStop Color="#00F0FF80" Offset="1"/>
+                    </LinearGradientBrush>
+                    <LinearGradientBrush x:Key="linearGradient3442" MappingMode="Absolute" StartPoint="87.533279,74.838577" EndPoint="77.137749,46.277084">
+                        <GradientStop Color="#FFFFFFFF" Offset="0"/>
+                        <GradientStop Color="#00FFFFFF" Offset="1"/>
+                    </LinearGradientBrush>
+                    <LinearGradientBrush x:Key="linearGradient3453" MappingMode="Absolute" StartPoint="83.324677,24.0625" EndPoint="83.324677,69.837845">
+                        <GradientStop Color="#FFFFFFFF" Offset="0"/>
+                        <GradientStop Color="#00FFFFFF" Offset="1"/>
+                        <LinearGradientBrush.Transform>
+                            <TranslateTransform X="0" Y="4"/>
+                        </LinearGradientBrush.Transform>
+                    </LinearGradientBrush>
+                    <RadialGradientBrush x:Key="radialGradient3457" MappingMode="Absolute" Center="99.765625,29.374895" GradientOrigin="99.765625,29.374895" RadiusX="3.015625" RadiusY="3.015625">
+                        <GradientStop Color="#FFF0FF80" Offset="0"/>
+                        <GradientStop Color="#00F0FF80" Offset="1"/>
+                        <RadialGradientBrush.Transform>
+                            <MatrixTransform Matrix="1.9646726,3.4242959e-7,-1.0414508e-6,5.9752716,-167.24116,-126.14811"/>
+                        </RadialGradientBrush.Transform>
+                    </RadialGradientBrush>
+                    <RadialGradientBrush x:Key="radialGradient3511" MappingMode="Absolute" Center="53.633381,51.919601" GradientOrigin="53.633381,51.919601" RadiusX="52.000004" RadiusY="52.000004">
+                        <GradientStop Color="#FFFFFFFF" Offset="0"/>
+                        <GradientStop Color="#00FFFFFF" Offset="1"/>
+                        <RadialGradientBrush.Transform>
+                            <MatrixTransform Matrix="1.0961401,8.7912098e-2,-0.1002304,1.2497316,1.0599334,-18.687387"/>
+                        </RadialGradientBrush.Transform>
+                    </RadialGradientBrush>
+                    <BlurEffect x:Key="blur" Radius="1"/>
+                </Canvas.Resources>
+                <Canvas>
+                    <Canvas>
+                        <Canvas>
+                            <Canvas.RenderTransform>
+                                <TranslateTransform X="2.3931686e-5" Y="0"/>
+                            </Canvas.RenderTransform>
+                            <Path Stroke="#FF004D00" StrokeThickness="8" StrokeMiterLimit="4" StrokeLineJoin="Round" StrokeStartLineCap="Round" StrokeEndLineCap="Round" Effect="{StaticResource blur}" Data="M 54.393966 74.154282 C 46.245967 65.803997 28.630827 47.75 28.630827 47.75 L 15.999972 60.697999 L 54.393966 100.05285 L 111.99998 41 L 99.367397 28.05286 C 99.367397 28.05286 64.105395 64.200283 54.393966 74.154282 z"/>
+                            <Path Stroke="{StaticResource linearGradient2962}" StrokeThickness="8" StrokeMiterLimit="4" StrokeLineJoin="Round" StrokeStartLineCap="Round" StrokeEndLineCap="Round" Data="M 54.393966 74.154282 C 46.245967 65.803997 28.630827 47.75 28.630827 47.75 L 15.999972 60.697999 L 54.393966 100.05285 L 111.99998 41 L 99.367397 28.05286 C 99.367397 28.05286 64.105395 64.200283 54.393966 74.154282 z"/>
+                            <Path Stroke="{StaticResource radialGradient3511}" StrokeThickness="8" StrokeMiterLimit="4" StrokeLineJoin="Round" StrokeStartLineCap="Round" StrokeEndLineCap="Round" Effect="{StaticResource blur}" Data="M 54.393966 74.154282 C 46.245967 65.803997 28.630827 47.75 28.630827 47.75 L 15.999972 60.697999 L 54.393966 100.05285 L 111.99998 41 L 99.367397 28.05286 C 99.367397 28.05286 64.105395 64.200283 54.393966 74.154282 z"/>
+                            <Path Fill="{StaticResource radialGradient3457}" StrokeThickness="8" StrokeMiterLimit="4" StrokeLineJoin="Round" StrokeStartLineCap="Round" StrokeEndLineCap="Round" Effect="{StaticResource blur}" Data="M 28.406226 44.03125 C 28.256338 44.028846 28.119644 44.047827 27.968726 44.0625 C 27.141534 44.144551 26.373396 44.489582 25.749976 45.03125 L 27.437476 54.71875 C 27.548391 54.605074 28.287843 53.870571 28.374976 53.78125 L 28.749976 54.15625 L 31.781226 45.8125 L 31.218726 45.25 C 30.477376 44.490406 29.455436 44.048081 28.406226 44.03125 z">
+                                <Path.RenderTransform>
+                                    <MatrixTransform Matrix="1,0,0,-1,26,147.74979"/>
+                                </Path.RenderTransform>
+                            </Path>
+                            <Path Fill="{StaticResource radialGradient3292}" StrokeThickness="8" StrokeMiterLimit="4" StrokeLineJoin="Round" StrokeStartLineCap="Round" StrokeEndLineCap="Round" Effect="{StaticResource blur}" Data="M 99.40625 24.03125 C 99.256362 24.028846 99.119668 24.047827 98.96875 24.0625 C 98.141558 24.144551 97.37342 24.489582 96.75 25.03125 L 98.4375 34.71875 C 98.548415 34.605074 99.287867 33.870571 99.375 33.78125 L 99.75 34.15625 L 102.78125 25.8125 L 102.21875 25.25 C 101.4774 24.490406 100.45546 24.048081 99.40625 24.03125 z">
+                                <Path.RenderTransform>
+                                    <MatrixTransform Matrix="-0.3420202,0.9396927,0.9396927,0.3420202,24.20981,-42.203299"/>
+                                </Path.RenderTransform>
+                            </Path>
+                            <Path Fill="{StaticResource radialGradient3288}" StrokeThickness="8" StrokeMiterLimit="4" StrokeLineJoin="Round" StrokeStartLineCap="Round" StrokeEndLineCap="Round" Effect="{StaticResource blur}" Data="M 28.406226 44.03125 C 28.256338 44.028846 28.119644 44.047827 27.968726 44.0625 C 27.141534 44.144551 26.373396 44.489582 25.749976 45.03125 L 27.437476 54.71875 C 27.548391 54.605074 28.287843 53.870571 28.374976 53.78125 L 28.749976 54.15625 L 31.781226 45.8125 L 31.218726 45.25 C 30.477376 44.490406 29.455436 44.048081 28.406226 44.03125 z"/>
+                            <Path Fill="{StaticResource radialGradient3256}" StrokeThickness="8" StrokeMiterLimit="4" StrokeLineJoin="Round" StrokeStartLineCap="Round" StrokeEndLineCap="Round" Effect="{StaticResource blur}" Data="M 99.40625 24.03125 C 99.256362 24.028846 99.119668 24.047827 98.96875 24.0625 C 98.141558 24.144551 97.37342 24.489582 96.75 25.03125 L 98.4375 34.71875 C 98.548415 34.605074 99.287867 33.870571 99.375 33.78125 L 99.75 34.15625 L 102.78125 25.8125 L 102.21875 25.25 C 101.4774 24.490406 100.45546 24.048081 99.40625 24.03125 z">
+                                <Path.RenderTransform>
+                                    <MatrixTransform Matrix="0.3420202,0.9396927,-0.9396927,0.3420202,104.53338,-62.203299"/>
+                                </Path.RenderTransform>
+                            </Path>
+                            <Path Fill="{StaticResource radialGradient3004}" StrokeThickness="8" StrokeMiterLimit="4" StrokeLineJoin="Round" StrokeStartLineCap="Round" StrokeEndLineCap="Round" Effect="{StaticResource blur}" Data="M 99.40625 24.03125 C 99.256362 24.028846 99.119668 24.047827 98.96875 24.0625 C 98.141558 24.144551 97.37342 24.489582 96.75 25.03125 L 98.4375 34.71875 C 98.548415 34.605074 99.287867 33.870571 99.375 33.78125 L 99.75 34.15625 L 102.78125 25.8125 L 102.21875 25.25 C 101.4774 24.490406 100.45546 24.048081 99.40625 24.03125 z ">
+                                <Path.RenderTransform>
+                                    <TranslateTransform X="-2.3931686e-5" Y="0"/>
+                                </Path.RenderTransform>
+                            </Path>
+                            <Path Stroke="{StaticResource radialGradient2987}" StrokeThickness="8" StrokeMiterLimit="4" StrokeLineJoin="Round" StrokeStartLineCap="Round" StrokeEndLineCap="Round" Data="M 54.393966 74.154282 C 46.245967 65.803997 28.630827 47.75 28.630827 47.75 L 15.999972 60.697999 L 54.393966 100.05285 L 111.99998 41 L 99.367397 28.05286 C 99.367397 28.05286 64.105395 64.200283 54.393966 74.154282 z"/>
+                            <Path Fill="{StaticResource radialGradient2954}" Data="M 54.393966 74.154282 C 46.245967 65.803997 28.630827 47.75 28.630827 47.75 L 15.999972 60.697999 L 54.393966 100.05285 L 111.99998 41 L 99.367397 28.05286 C 99.367397 28.05286 64.105395 64.200283 54.393966 74.154282 z"/>
+                            <Path Fill="{StaticResource linearGradient2977}" Data="M 99.374976 28.0625 C 99.374973 28.0625 64.117655 64.202251 54.406226 74.15625 C 46.258227 65.805965 28.624976 47.75 28.624976 47.75 L 15.999976 60.6875 L 32.468726 77.5625 C 32.657637 77.562987 32.842103 77.5625 33.031226 77.5625 C 50.561025 77.5625 67.167517 75.469361 82.062476 71.71875 L 111.99998 41 L 99.374976 28.0625 z"/>
+                            <Path Stroke="{StaticResource linearGradient3421}" Effect="{StaticResource blur}" Data="M 54.393966 74.154282 C 46.245967 65.803997 28.630827 47.75 28.630827 47.75 L 15.999972 60.697999 L 54.393966 100.05285 L 111.99998 41 L 99.367397 28.05286 C 99.367397 28.05286 64.105395 64.200283 54.393966 74.154282 z"/>
+                            <Path Fill="{StaticResource linearGradient3442}" Data="M 99.375 28.0625 C 99.375 28.0625 98.974759 28.493841 98.96875 28.5 L 111.15625 40.78125 L 81.15625 71 C 66.229051 74.687634 50.098993 77.218746 32.53125 77.21875 C 32.404895 77.21875 32.281159 77.218749 32.15625 77.21875 L 32.46875 77.5625 C 32.657661 77.562987 32.842127 77.5625 33.03125 77.5625 C 50.561049 77.5625 67.167541 75.469361 82.0625 71.71875 L 112 41 L 99.375 28.0625 z">
+                                <Path.RenderTransform>
+                                    <TranslateTransform X="-2.3931686e-5" Y="0"/>
+                                </Path.RenderTransform>
+                            </Path>
+                            <Path Fill="{StaticResource linearGradient3453}" Data="M 99.375 28.0625 C 99.374997 28.0625 64.117679 64.202251 54.40625 74.15625 C 46.258251 65.805965 28.625 47.75 28.625 47.75 L 16 60.6875 L 16.5 61.1875 L 28.625 48.75 C 28.625 48.75 46.258251 66.805965 54.40625 75.15625 C 64.117679 65.202251 99.374997 29.0625 99.375 29.0625 L 111.5 41.5 L 112 41 L 99.375 28.0625 z ">
+                                <Path.RenderTransform>
+                                    <TranslateTransform X="-2.3931686e-5" Y="0"/>
+                                </Path.RenderTransform>
+                            </Path>
+                        </Canvas>
+                    </Canvas>
+                </Canvas>
+                <Canvas.RenderTransform>
+                    <TransformGroup>
+                        <TranslateTransform X="-64" Y="-64"/>
+                        <ScaleTransform ScaleX="2.5" ScaleY="2.5"/>
+                    </TransformGroup>
+                </Canvas.RenderTransform>
+            </Canvas>
+        </Border>
+
+        <Label Grid.Row="0" Content="Success!" FontSize="18" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10,0,0,0"/>
+        <Separator Grid.Row="1"/>
+        <Border Grid.Row="2" Padding="5">
+            <StackPanel Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center">
+                <controls:CommandLink Content="All done" Note="Just exit the Confuser." VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10" Click="Exit_Click" />
+                <controls:CommandLink Content="Open output directory" Note="Open and check the output." VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10" Click="CommandLink_Click" />
+            </StackPanel>
+        </Border>
+    </Grid>
+</Page>

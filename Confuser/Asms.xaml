@@ -1,0 +1,67 @@
+﻿<local:ConfuserTab x:Class="Confuser.Asms"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:Confuser" AllowDrop="True">
+    <Grid.RowDefinitions>
+        <RowDefinition Height="60px"/>
+        <RowDefinition Height="*"/>
+    </Grid.RowDefinitions>
+
+    <Border Grid.Row="1" Padding="5">
+        <Grid>
+            <ListBox x:Name="view" Grid.Row="2" KeyDown="view_KeyDown" SelectionMode="Extended"
+                     SelectionChanged="view_SelectionChanged">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="20px"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <RadioButton x:Name="isMain" Grid.Column="0" IsChecked="{Binding IsMain}" VerticalAlignment="Center" HorizontalAlignment="Right" Focusable="False" GroupName="mainSel"/>
+                            <Label Grid.Column="1" Foreground="{Binding Foreground, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type ListBoxItem}}}">
+                                <TextBlock Text="{Binding Path}"/>
+                            </Label>
+                        </Grid>
+                        <DataTemplate.Triggers>
+                            <DataTrigger Binding="{Binding IsExecutable}" Value="False">
+                                <Setter TargetName="isMain" Property="Visibility" Value="Hidden"/>
+                            </DataTrigger>
+                        </DataTemplate.Triggers>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+            <Label x:Name="message" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"
+                   Foreground="#808080" Content="Drop your assemblies here">
+                <Label.Style>
+                    <Style TargetType="{x:Type Label}" BasedOn="{StaticResource {x:Type Label}}">
+                        <Setter Property="Visibility" Value="Collapsed"/>
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding ElementName=view, Path=Items.Count}" Value="0">
+                                <Setter Property="Visibility" Value="Visible"/>
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </Label.Style>
+            </Label>
+        </Grid>
+    </Border>
+
+    <Grid x:Name="info" Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Center">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="40px"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <local:Bitmap Grid.Row="0" Grid.RowSpan="2" Grid.Column="0" Source="{Binding Icon}" VerticalAlignment="Center"/>
+        <Label Grid.Row="0" Grid.Column="1" FontSize="12">
+            <TextBlock Text="{Binding Filename}"/>
+        </Label>
+        <Label Grid.Row="1" Grid.Column="1" FontSize="10" Foreground="#808080">
+            <TextBlock Text="{Binding Fullname}"/>
+        </Label>
+    </Grid>
+</local:ConfuserTab>

@@ -1,0 +1,17 @@
+﻿Structure Phases:
+    Phase 1: Add/Modify/Delete MetadataTokens & Do process without dependency or effect on MetadataTokens
+    Phase 2: Populate Cil Codes(Can use MetadataTokens)
+    Phase 3: Modify Cil Codes(Can use MetadataTokens)
+
+Metadata Phases:
+    Phase 1: Add/Delete Metadata Table Structure
+    Phase 2: Modify/Query Metadata Table Structure
+    Phase 3: Modify Metadata Stream/Heap Structure
+
+Pe Phases:
+    Phase 1: Add/Delete Pe Structure
+    Phase 2: Update Pe Structure
+    Phase 3: Query Pe Structure/Warpping Pe(Packer,Shell,etc.)
+    
+Max Protection Attribute:
+[reduce md]+[string encrypt,dynamic=true]+[ctor proxy]+[invalid md]+[anti ildasm]+[mtd proxy]+[stack underflow]+[disintegrate const,level=10]+[res encrypt]+[rename]+[anti debug,win32=true]+[ctrl flow,level=10]+[anti tamper]

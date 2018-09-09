@@ -1,0 +1,733 @@
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:Confuser"
+    xmlns:controls="clr-namespace:System.Windows.Controls">
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="..\Darkness.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+
+        <Style TargetType="{x:Type local:Loading}">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type local:Loading}">
+                    <ControlTemplate.Resources>
+                        <Storyboard x:Key="ProgressAnimation" RepeatBehavior="Forever">
+                            <ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="block" Storyboard.TargetProperty="(UIElement.OpacityMask).(SolidColorBrush.Color)">
+                                <SplineColorKeyFrame KeyTime="00:00:00" Value="Black"/>
+                                <SplineColorKeyFrame KeyTime="00:00:00.2290000" Value="#EF000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:00.4590000" Value="#E2000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:00.6880000" Value="#D3000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:00.9180000" Value="#C6000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:01.1470000" Value="#B7000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:01.3760000" Value="#AA000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:01.6060000" Value="#9B000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:01.8350000" Value="#8E000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:02.0650000" Value="#7F000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:02.2940000" Value="#72000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:02.5240000" Value="#63000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:02.7530000" Value="#56000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:02.9820000" Value="#3D000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:03.2120000" Value="#26000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:03.4410000" Value="#19000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:03.6710000" Value="#0C000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:03.9000000" Value="#00000000"/>
+                            </ColorAnimationUsingKeyFrames>
+                            <ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="block17" Storyboard.TargetProperty="(UIElement.OpacityMask).(SolidColorBrush.Color)">
+                                <SplineColorKeyFrame KeyTime="00:00:00" Value="#EF000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:00.2290000" Value="#E2000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:00.4590000" Value="#D3000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:00.6880000" Value="#C6000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:00.9180000" Value="#B7000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:01.1470000" Value="#AA000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:01.3760000" Value="#9B000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:01.6060000" Value="#8E000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:01.8350000" Value="#7F000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:02.0650000" Value="#72000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:02.2940000" Value="#63000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:02.5240000" Value="#56000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:02.7530000" Value="#3D000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:02.9820000" Value="#26000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:03.2120000" Value="#19000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:03.4410000" Value="#0C000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:03.6710000" Value="#00000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:03.9000000" Value="Black"/>
+                            </ColorAnimationUsingKeyFrames>
+                            <ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="block16" Storyboard.TargetProperty="(UIElement.OpacityMask).(SolidColorBrush.Color)">
+                                <SplineColorKeyFrame KeyTime="00:00:00" Value="#E2000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:00.2290000" Value="#D3000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:00.4590000" Value="#C6000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:00.6880000" Value="#B7000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:00.9180000" Value="#AA000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:01.1470000" Value="#9B000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:01.3760000" Value="#8E000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:01.6060000" Value="#7F000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:01.8350000" Value="#72000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:02.0650000" Value="#63000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:02.2940000" Value="#56000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:02.5240000" Value="#3D000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:02.7530000" Value="#26000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:02.9820000" Value="#19000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:03.2120000" Value="#0C000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:03.4410000" Value="#00000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:03.6710000" Value="Black"/>
+                                <SplineColorKeyFrame KeyTime="00:00:03.9000000" Value="#EF000000"/>
+                            </ColorAnimationUsingKeyFrames>
+                            <ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="block15" Storyboard.TargetProperty="(UIElement.OpacityMask).(SolidColorBrush.Color)">
+                                <SplineColorKeyFrame KeyTime="00:00:00" Value="#D3000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:00.2290000" Value="#C6000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:00.4590000" Value="#B7000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:00.6880000" Value="#AA000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:00.9180000" Value="#9B000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:01.1470000" Value="#8E000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:01.3760000" Value="#7F000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:01.6060000" Value="#72000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:01.8350000" Value="#63000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:02.0650000" Value="#56000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:02.2940000" Value="#3D000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:02.5240000" Value="#26000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:02.7530000" Value="#19000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:02.9820000" Value="#0C000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:03.2120000" Value="#00000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:03.4410000" Value="Black"/>
+                                <SplineColorKeyFrame KeyTime="00:00:03.6710000" Value="#EF000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:03.9000000" Value="#E2000000"/>
+                            </ColorAnimationUsingKeyFrames>
+                            <ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="block14" Storyboard.TargetProperty="(UIElement.OpacityMask).(SolidColorBrush.Color)">
+                                <SplineColorKeyFrame KeyTime="00:00:00" Value="#C6000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:00.2290000" Value="#B7000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:00.4590000" Value="#AA000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:00.6880000" Value="#9B000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:00.9180000" Value="#8E000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:01.1470000" Value="#7F000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:01.3760000" Value="#72000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:01.6060000" Value="#63000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:01.8350000" Value="#56000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:02.0650000" Value="#3D000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:02.2940000" Value="#26000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:02.5240000" Value="#19000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:02.7530000" Value="#0C000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:02.9820000" Value="#00000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:03.2120000" Value="Black"/>
+                                <SplineColorKeyFrame KeyTime="00:00:03.4410000" Value="#EF000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:03.6710000" Value="#E2000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:03.9000000" Value="#D3000000"/>
+                            </ColorAnimationUsingKeyFrames>
+                            <ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="block13" Storyboard.TargetProperty="(UIElement.OpacityMask).(SolidColorBrush.Color)">
+                                <SplineColorKeyFrame KeyTime="00:00:00" Value="#B7000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:00.2290000" Value="#AA000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:00.4590000" Value="#9B000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:00.6880000" Value="#8E000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:00.9180000" Value="#7F000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:01.1470000" Value="#72000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:01.3760000" Value="#63000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:01.6060000" Value="#56000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:01.8350000" Value="#3D000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:02.0650000" Value="#26000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:02.2940000" Value="#19000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:02.5240000" Value="#0C000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:02.7530000" Value="#00000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:02.9820000" Value="Black"/>
+                                <SplineColorKeyFrame KeyTime="00:00:03.2120000" Value="#EF000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:03.4410000" Value="#E2000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:03.6710000" Value="#D3000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:03.9000000" Value="#C6000000"/>
+                            </ColorAnimationUsingKeyFrames>
+                            <ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="block12" Storyboard.TargetProperty="(UIElement.OpacityMask).(SolidColorBrush.Color)">
+                                <SplineColorKeyFrame KeyTime="00:00:00" Value="#AA000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:00.2290000" Value="#9B000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:00.4590000" Value="#8E000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:00.6880000" Value="#7F000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:00.9180000" Value="#72000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:01.1470000" Value="#63000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:01.3760000" Value="#56000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:01.6060000" Value="#3D000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:01.8350000" Value="#26000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:02.0650000" Value="#19000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:02.2940000" Value="#0C000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:02.5240000" Value="#00000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:02.7530000" Value="Black"/>
+                                <SplineColorKeyFrame KeyTime="00:00:02.9820000" Value="#EF000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:03.2120000" Value="#E2000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:03.4410000" Value="#D3000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:03.6710000" Value="#C6000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:03.9000000" Value="#B7000000"/>
+                            </ColorAnimationUsingKeyFrames>
+                            <ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="block11" Storyboard.TargetProperty="(UIElement.OpacityMask).(SolidColorBrush.Color)">
+                                <SplineColorKeyFrame KeyTime="00:00:00" Value="#9B000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:00.2290000" Value="#8E000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:00.4590000" Value="#7F000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:00.6880000" Value="#72000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:00.9180000" Value="#63000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:01.1470000" Value="#56000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:01.3760000" Value="#3D000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:01.6060000" Value="#26000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:01.8350000" Value="#19000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:02.0650000" Value="#0C000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:02.2940000" Value="#00000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:02.5240000" Value="Black"/>
+                                <SplineColorKeyFrame KeyTime="00:00:02.7530000" Value="#EF000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:02.9820000" Value="#E2000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:03.2120000" Value="#D3000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:03.4410000" Value="#C6000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:03.6710000" Value="#B7000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:03.9000000" Value="#AA000000"/>
+                            </ColorAnimationUsingKeyFrames>
+                            <ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="block10" Storyboard.TargetProperty="(UIElement.OpacityMask).(SolidColorBrush.Color)">
+                                <SplineColorKeyFrame KeyTime="00:00:00" Value="#8E000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:00.2290000" Value="#7F000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:00.4590000" Value="#72000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:00.6880000" Value="#63000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:00.9180000" Value="#56000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:01.1470000" Value="#3D000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:01.3760000" Value="#23000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:01.6060000" Value="#19000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:01.8350000" Value="#0C000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:02.0650000" Value="#00000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:02.2940000" Value="Black"/>
+                                <SplineColorKeyFrame KeyTime="00:00:02.5240000" Value="#EF000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:02.7530000" Value="#E2000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:02.9820000" Value="#D3000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:03.2120000" Value="#C6000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:03.4410000" Value="#B7000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:03.6710000" Value="#AA000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:03.9000000" Value="#9B000000"/>
+                            </ColorAnimationUsingKeyFrames>
+                            <ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="block9" Storyboard.TargetProperty="(UIElement.OpacityMask).(SolidColorBrush.Color)">
+                                <SplineColorKeyFrame KeyTime="00:00:00" Value="#7F000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:00.2290000" Value="#72000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:00.4590000" Value="#63000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:00.6880000" Value="#56000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:00.9180000" Value="#3D000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:01.1470000" Value="#26000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:01.3760000" Value="#19000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:01.6060000" Value="#0C000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:01.8350000" Value="#00000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:02.0650000" Value="Black"/>
+                                <SplineColorKeyFrame KeyTime="00:00:02.2940000" Value="#EF000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:02.5240000" Value="#E2000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:02.7530000" Value="#D3000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:02.9820000" Value="#C6000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:03.2120000" Value="#B7000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:03.4410000" Value="#AA000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:03.6710000" Value="#9B000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:03.9000000" Value="#91000000"/>
+                            </ColorAnimationUsingKeyFrames>
+                            <ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="block8" Storyboard.TargetProperty="(UIElement.OpacityMask).(SolidColorBrush.Color)">
+                                <SplineColorKeyFrame KeyTime="00:00:00" Value="#72000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:00.2290000" Value="#63000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:00.4590000" Value="#56000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:00.6880000" Value="#3D000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:00.9180000" Value="#26000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:01.1470000" Value="#19000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:01.3760000" Value="#0C000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:01.6060000" Value="#00000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:01.8350000" Value="Black"/>
+                                <SplineColorKeyFrame KeyTime="00:00:02.0650000" Value="#EF000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:02.2940000" Value="#E2000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:02.5240000" Value="#D3000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:02.7530000" Value="#C6000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:02.9820000" Value="#B7000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:03.2120000" Value="#AA000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:03.4410000" Value="#9B000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:03.6710000" Value="#91000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:03.9000000" Value="#7F000000"/>
+                            </ColorAnimationUsingKeyFrames>
+                            <ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="block7" Storyboard.TargetProperty="(UIElement.OpacityMask).(SolidColorBrush.Color)">
+                                <SplineColorKeyFrame KeyTime="00:00:00" Value="#63000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:00.2290000" Value="#56000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:00.4590000" Value="#3D000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:00.6880000" Value="#26000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:00.9180000" Value="#19000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:01.1470000" Value="#0C000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:01.3760000" Value="#00000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:01.6060000" Value="Black"/>
+                                <SplineColorKeyFrame KeyTime="00:00:01.8350000" Value="#EF000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:02.0650000" Value="#E2000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:02.2940000" Value="#D3000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:02.5240000" Value="#C6000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:02.7530000" Value="#B7000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:02.9820000" Value="#AA000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:03.2120000" Value="#9B000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:03.4410000" Value="#91000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:03.6710000" Value="#7F000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:03.9000000" Value="#72000000"/>
+                            </ColorAnimationUsingKeyFrames>
+                            <ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="block6" Storyboard.TargetProperty="(UIElement.OpacityMask).(SolidColorBrush.Color)">
+                                <SplineColorKeyFrame KeyTime="00:00:00" Value="#56000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:00.2290000" Value="#3D000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:00.4590000" Value="#26000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:00.6880000" Value="#19000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:00.9180000" Value="#0C000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:01.1470000" Value="#00000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:01.3760000" Value="Black"/>
+                                <SplineColorKeyFrame KeyTime="00:00:01.6060000" Value="#EF000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:01.8350000" Value="#E2000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:02.0650000" Value="#D3000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:02.2940000" Value="#C6000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:02.5240000" Value="#B7000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:02.7530000" Value="#AA000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:02.9820000" Value="#9B000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:03.2120000" Value="#91000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:03.4410000" Value="#7F000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:03.6710000" Value="#72000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:03.9000000" Value="#63000000"/>
+                            </ColorAnimationUsingKeyFrames>
+                            <ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="block5" Storyboard.TargetProperty="(UIElement.OpacityMask).(SolidColorBrush.Color)">
+                                <SplineColorKeyFrame KeyTime="00:00:00" Value="#3D000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:00.2290000" Value="#26000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:00.4590000" Value="#19000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:00.6880000" Value="#0C000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:00.9180000" Value="#00000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:01.1470000" Value="Black"/>
+                                <SplineColorKeyFrame KeyTime="00:00:01.3760000" Value="#EF000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:01.6060000" Value="#E2000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:01.8350000" Value="#D3000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:02.0650000" Value="#C6000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:02.2940000" Value="#B7000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:02.5240000" Value="#AA000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:02.7530000" Value="#9B000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:02.9820000" Value="#91000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:03.2120000" Value="#7F000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:03.4410000" Value="#72000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:03.6710000" Value="#63000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:03.9000000" Value="#56000000"/>
+                            </ColorAnimationUsingKeyFrames>
+                            <ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="block4" Storyboard.TargetProperty="(UIElement.OpacityMask).(SolidColorBrush.Color)">
+                                <SplineColorKeyFrame KeyTime="00:00:00" Value="#26000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:00.2290000" Value="#19000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:00.4590000" Value="#0C000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:00.6880000" Value="#00000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:00.9180000" Value="Black"/>
+                                <SplineColorKeyFrame KeyTime="00:00:01.1470000" Value="#EF000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:01.3760000" Value="#E2000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:01.6060000" Value="#D3000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:01.8350000" Value="#C6000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:02.0650000" Value="#B7000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:02.2940000" Value="#AA000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:02.5240000" Value="#9B000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:02.7530000" Value="#91000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:02.9820000" Value="#7F000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:03.2120000" Value="#72000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:03.4410000" Value="#63000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:03.6710000" Value="#56000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:03.9000000" Value="#3D000000"/>
+                            </ColorAnimationUsingKeyFrames>
+                            <ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="block3" Storyboard.TargetProperty="(UIElement.OpacityMask).(SolidColorBrush.Color)">
+                                <SplineColorKeyFrame KeyTime="00:00:00" Value="#19000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:00.2290000" Value="#0C000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:00.4590000" Value="#00000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:00.6880000" Value="Black"/>
+                                <SplineColorKeyFrame KeyTime="00:00:00.9180000" Value="#EF000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:01.1470000" Value="#E2000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:01.3760000" Value="#D3000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:01.6060000" Value="#C6000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:01.8350000" Value="#B7000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:02.0650000" Value="#AA000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:02.2940000" Value="#9B000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:02.5240000" Value="#91000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:02.7530000" Value="#7F000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:02.9820000" Value="#72000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:03.2120000" Value="#63000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:03.4410000" Value="#56000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:03.6710000" Value="#3D000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:03.9000000" Value="#26000000"/>
+                            </ColorAnimationUsingKeyFrames>
+                            <ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="block2" Storyboard.TargetProperty="(UIElement.OpacityMask).(SolidColorBrush.Color)">
+                                <SplineColorKeyFrame KeyTime="00:00:00" Value="#0C000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:00.2290000" Value="#00000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:00.4590000" Value="Black"/>
+                                <SplineColorKeyFrame KeyTime="00:00:00.6880000" Value="#EF000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:00.9180000" Value="#E2000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:01.1470000" Value="#D3000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:01.3760000" Value="#C6000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:01.6060000" Value="#B7000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:01.8350000" Value="#AA000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:02.0650000" Value="#9B000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:02.2940000" Value="#91000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:02.5240000" Value="#7F000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:02.7530000" Value="#72000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:02.9820000" Value="#63000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:03.2120000" Value="#56000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:03.4410000" Value="#3D000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:03.6710000" Value="#26000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:03.9000000" Value="#19000000"/>
+                            </ColorAnimationUsingKeyFrames>
+                            <ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="block1" Storyboard.TargetProperty="(UIElement.OpacityMask).(SolidColorBrush.Color)">
+                                <SplineColorKeyFrame KeyTime="00:00:00" Value="#00000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:00.2290000" Value="Black"/>
+                                <SplineColorKeyFrame KeyTime="00:00:00.4590000" Value="#EF000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:00.6880000" Value="#E2000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:00.9180000" Value="#D3000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:01.1470000" Value="#C6000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:01.3760000" Value="#B7000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:01.6060000" Value="#AA000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:01.8350000" Value="#9B000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:02.0650000" Value="#8E000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:02.2940000" Value="#7F000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:02.5240000" Value="#72000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:02.7530000" Value="#63000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:02.9820000" Value="#56000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:03.2120000" Value="#3D000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:03.4410000" Value="#26000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:03.6710000" Value="#19000000"/>
+                                <SplineColorKeyFrame KeyTime="00:00:03.9000000" Value="#0C000000"/>
+                            </ColorAnimationUsingKeyFrames>
+                        </Storyboard>
+                    </ControlTemplate.Resources>
+                    <ControlTemplate.Triggers>
+                        <EventTrigger RoutedEvent="FrameworkElement.Loaded">
+                            <BeginStoryboard Storyboard="{StaticResource ProgressAnimation}"/>
+                        </EventTrigger>
+                    </ControlTemplate.Triggers>
+
+                    <Border Background="#20000000">
+                        <Canvas VerticalAlignment="Center" HorizontalAlignment="Center" Height="88" Width="88">
+                            <TextBlock Text="Loading..." TextWrapping="Wrap" Canvas.Left="20.069" Canvas.Top="36.214" Foreground="#FFFFFF"/>
+                            <Grid Width="10.734" Height="10.004" Canvas.Left="38.614" Canvas.Top="0.331">
+                                <Grid x:Name="block" RenderTransformOrigin="0.5,4.3689" OpacityMask="#00000000" VerticalAlignment="Top" Height="10.004">
+                                    <Grid.RenderTransform>
+                                        <TransformGroup>
+                                            <ScaleTransform/>
+                                            <SkewTransform/>
+                                            <RotateTransform Angle="180"/>
+                                            <TranslateTransform/>
+                                        </TransformGroup>
+                                    </Grid.RenderTransform>
+                                    <Path Fill="#FFFFFF" Stretch="Fill" RenderTransformOrigin="0.5,4.3689" Data="M291.15499,85.897525 C291.15499,85.897525 301.88917,85.87921 301.88917,85.87921 301.88917,85.87921 300.38339,94.355061 300.38339,94.355061 300.38339,94.355061 292.85366,94.355042 292.85366,94.355042 292.85366,94.355042 291.15499,85.897525 291.15499,85.897525 z"/>
+                                </Grid>
+                                <Grid x:Name="block1" RenderTransformOrigin="0.5,4.3689" OpacityMask="#0C000000" VerticalAlignment="Top" Height="10.004">
+                                    <Grid.RenderTransform>
+                                        <TransformGroup>
+                                            <ScaleTransform ScaleX="0.99999999999999989" ScaleY="0.99999999999999989"/>
+                                            <SkewTransform/>
+                                            <RotateTransform Angle="-160"/>
+                                            <TranslateTransform/>
+                                        </TransformGroup>
+                                    </Grid.RenderTransform>
+                                    <Path Fill="#FFFFFF" Stretch="Fill" RenderTransformOrigin="0.5,4.3689" Data="M291.15499,85.897525 C291.15499,85.897525 301.88917,85.87921 301.88917,85.87921 301.88917,85.87921 300.38339,94.355061 300.38339,94.355061 300.38339,94.355061 292.85366,94.355042 292.85366,94.355042 292.85366,94.355042 291.15499,85.897525 291.15499,85.897525 z"/>
+                                </Grid>
+                                <Grid x:Name="block2" RenderTransformOrigin="0.5,4.3689" OpacityMask="#19000000" VerticalAlignment="Top" Height="10.004">
+                                    <Grid.RenderTransform>
+                                        <TransformGroup>
+                                            <ScaleTransform/>
+                                            <SkewTransform/>
+                                            <RotateTransform Angle="-140"/>
+                                            <TranslateTransform/>
+                                        </TransformGroup>
+                                    </Grid.RenderTransform>
+                                    <Path Fill="#FFFFFF" Stretch="Fill" RenderTransformOrigin="0.5,4.3689" Data="M291.15499,85.897525 C291.15499,85.897525 301.88917,85.87921 301.88917,85.87921 301.88917,85.87921 300.38339,94.355061 300.38339,94.355061 300.38339,94.355061 292.85366,94.355042 292.85366,94.355042 292.85366,94.355042 291.15499,85.897525 291.15499,85.897525 z"/>
+                                </Grid>
+                                <Grid x:Name="block3" RenderTransformOrigin="0.5,4.3689" OpacityMask="#26000000" VerticalAlignment="Top" Height="10.004">
+                                    <Grid.RenderTransform>
+                                        <TransformGroup>
+                                            <ScaleTransform ScaleX="0.99999999999999989" ScaleY="0.99999999999999989"/>
+                                            <SkewTransform/>
+                                            <RotateTransform Angle="-119.99999999999999"/>
+                                            <TranslateTransform/>
+                                        </TransformGroup>
+                                    </Grid.RenderTransform>
+                                    <Path Fill="#FFFFFF" Stretch="Fill" RenderTransformOrigin="0.5,4.3689" Data="M291.15499,85.897525 C291.15499,85.897525 301.88917,85.87921 301.88917,85.87921 301.88917,85.87921 300.38339,94.355061 300.38339,94.355061 300.38339,94.355061 292.85366,94.355042 292.85366,94.355042 292.85366,94.355042 291.15499,85.897525 291.15499,85.897525 z"/>
+                                </Grid>
+                                <Grid x:Name="block4" RenderTransformOrigin="0.5,4.3689" OpacityMask="#3D000000" VerticalAlignment="Top" Height="10.004">
+                                    <Grid.RenderTransform>
+                                        <TransformGroup>
+                                            <ScaleTransform ScaleX="0.99999999999999989" ScaleY="0.99999999999999989"/>
+                                            <SkewTransform/>
+                                            <RotateTransform Angle="-100"/>
+                                            <TranslateTransform/>
+                                        </TransformGroup>
+                                    </Grid.RenderTransform>
+                                    <Path Fill="#FFFFFF" Stretch="Fill" RenderTransformOrigin="0.5,4.3689" Data="M291.15499,85.897525 C291.15499,85.897525 301.88917,85.87921 301.88917,85.87921 301.88917,85.87921 300.38339,94.355061 300.38339,94.355061 300.38339,94.355061 292.85366,94.355042 292.85366,94.355042 292.85366,94.355042 291.15499,85.897525 291.15499,85.897525 z"/>
+                                </Grid>
+                                <Grid x:Name="block5" RenderTransformOrigin="0.5,4.3689" OpacityMask="#56000000" VerticalAlignment="Top" Height="10.004">
+                                    <Grid.RenderTransform>
+                                        <TransformGroup>
+                                            <ScaleTransform ScaleX="0.99999999999999989" ScaleY="0.99999999999999989"/>
+                                            <SkewTransform/>
+                                            <RotateTransform Angle="-80"/>
+                                            <TranslateTransform/>
+                                        </TransformGroup>
+                                    </Grid.RenderTransform>
+                                    <Path Fill="#FFFFFF" Stretch="Fill" RenderTransformOrigin="0.5,4.3689" Data="M291.15499,85.897525 C291.15499,85.897525 301.88917,85.87921 301.88917,85.87921 301.88917,85.87921 300.38339,94.355061 300.38339,94.355061 300.38339,94.355061 292.85366,94.355042 292.85366,94.355042 292.85366,94.355042 291.15499,85.897525 291.15499,85.897525 z"/>
+                                </Grid>
+                                <Grid x:Name="block6" RenderTransformOrigin="0.5,4.3689" OpacityMask="#64000000" VerticalAlignment="Top" Height="10.004">
+                                    <Grid.RenderTransform>
+                                        <TransformGroup>
+                                            <ScaleTransform/>
+                                            <SkewTransform/>
+                                            <RotateTransform Angle="-59.999999999999993"/>
+                                            <TranslateTransform/>
+                                        </TransformGroup>
+                                    </Grid.RenderTransform>
+                                    <Path Fill="#FFFFFF" Stretch="Fill" RenderTransformOrigin="0.5,4.3689" Data="M291.15499,85.897525 C291.15499,85.897525 301.88917,85.87921 301.88917,85.87921 301.88917,85.87921 300.38339,94.355061 300.38339,94.355061 300.38339,94.355061 292.85366,94.355042 292.85366,94.355042 292.85366,94.355042 291.15499,85.897525 291.15499,85.897525 z"/>
+                                </Grid>
+                                <Grid x:Name="block7" RenderTransformOrigin="0.5,4.3689" OpacityMask="#72000000" VerticalAlignment="Top" Height="10.004">
+                                    <Grid.RenderTransform>
+                                        <TransformGroup>
+                                            <ScaleTransform ScaleX="0.99999999999999989" ScaleY="0.99999999999999989"/>
+                                            <SkewTransform/>
+                                            <RotateTransform Angle="-40"/>
+                                            <TranslateTransform/>
+                                        </TransformGroup>
+                                    </Grid.RenderTransform>
+                                    <Path Fill="#FFFFFF" Stretch="Fill" RenderTransformOrigin="0.5,4.3689" Data="M291.15499,85.897525 C291.15499,85.897525 301.88917,85.87921 301.88917,85.87921 301.88917,85.87921 300.38339,94.355061 300.38339,94.355061 300.38339,94.355061 292.85366,94.355042 292.85366,94.355042 292.85366,94.355042 291.15499,85.897525 291.15499,85.897525 z"/>
+                                </Grid>
+                                <Grid x:Name="block8" RenderTransformOrigin="0.5,4.3689" OpacityMask="#80000000" VerticalAlignment="Top" Height="10.004">
+                                    <Grid.RenderTransform>
+                                        <TransformGroup>
+                                            <ScaleTransform/>
+                                            <SkewTransform/>
+                                            <RotateTransform Angle="-19.999999999999996"/>
+                                            <TranslateTransform/>
+                                        </TransformGroup>
+                                    </Grid.RenderTransform>
+                                    <Path Fill="#FFFFFF" Stretch="Fill" RenderTransformOrigin="0.5,4.3689" Data="M291.15499,85.897525 C291.15499,85.897525 301.88917,85.87921 301.88917,85.87921 301.88917,85.87921 300.38339,94.355061 300.38339,94.355061 300.38339,94.355061 292.85366,94.355042 292.85366,94.355042 292.85366,94.355042 291.15499,85.897525 291.15499,85.897525 z"/>
+                                </Grid>
+                                <Grid x:Name="block9" OpacityMask="#8E000000" RenderTransformOrigin="0.5,4.3689" VerticalAlignment="Top" Height="10.004">
+                                    <Path Fill="#FFFFFF" Stretch="Fill" RenderTransformOrigin="0.5,4.3689" Data="M291.15499,85.897525 C291.15499,85.897525 301.88917,85.87921 301.88917,85.87921 301.88917,85.87921 300.38339,94.355061 300.38339,94.355061 300.38339,94.355061 292.85366,94.355042 292.85366,94.355042 292.85366,94.355042 291.15499,85.897525 291.15499,85.897525 z"/>
+                                </Grid>
+                                <Grid x:Name="block10" RenderTransformOrigin="0.5,4.3689" OpacityMask="#9C000000" VerticalAlignment="Top" Height="10.004">
+                                    <Grid.RenderTransform>
+                                        <TransformGroup>
+                                            <ScaleTransform/>
+                                            <SkewTransform/>
+                                            <RotateTransform Angle="19.999999999999996"/>
+                                            <TranslateTransform/>
+                                        </TransformGroup>
+                                    </Grid.RenderTransform>
+                                    <Path Fill="#FFFFFF" Stretch="Fill" RenderTransformOrigin="0.5,4.3689" Data="M291.15499,85.897525 C291.15499,85.897525 301.88917,85.87921 301.88917,85.87921 301.88917,85.87921 300.38339,94.355061 300.38339,94.355061 300.38339,94.355061 292.85366,94.355042 292.85366,94.355042 292.85366,94.355042 291.15499,85.897525 291.15499,85.897525 z"/>
+                                </Grid>
+                                <Grid x:Name="block11" RenderTransformOrigin="0.5,4.3689" OpacityMask="#AA000000" VerticalAlignment="Top" Height="10.004">
+                                    <Grid.RenderTransform>
+                                        <TransformGroup>
+                                            <ScaleTransform ScaleX="0.99999999999999989" ScaleY="0.99999999999999989"/>
+                                            <SkewTransform/>
+                                            <RotateTransform Angle="40"/>
+                                            <TranslateTransform/>
+                                        </TransformGroup>
+                                    </Grid.RenderTransform>
+                                    <Path Fill="#FFFFFF" Stretch="Fill" RenderTransformOrigin="0.5,4.3689" Data="M291.15499,85.897525 C291.15499,85.897525 301.88917,85.87921 301.88917,85.87921 301.88917,85.87921 300.38339,94.355061 300.38339,94.355061 300.38339,94.355061 292.85366,94.355042 292.85366,94.355042 292.85366,94.355042 291.15499,85.897525 291.15499,85.897525 z"/>
+                                </Grid>
+                                <Grid x:Name="block12" RenderTransformOrigin="0.5,4.3689" OpacityMask="#B8000000" VerticalAlignment="Top" Height="10.004">
+                                    <Grid.RenderTransform>
+                                        <TransformGroup>
+                                            <ScaleTransform/>
+                                            <SkewTransform/>
+                                            <RotateTransform Angle="59.999999999999993"/>
+                                            <TranslateTransform/>
+                                        </TransformGroup>
+                                    </Grid.RenderTransform>
+                                    <Path Fill="#FFFFFF" Stretch="Fill" RenderTransformOrigin="0.5,4.3689" Data="M291.15499,85.897525 C291.15499,85.897525 301.88917,85.87921 301.88917,85.87921 301.88917,85.87921 300.38339,94.355061 300.38339,94.355061 300.38339,94.355061 292.85366,94.355042 292.85366,94.355042 292.85366,94.355042 291.15499,85.897525 291.15499,85.897525 z"/>
+                                </Grid>
+                                <Grid x:Name="block13" RenderTransformOrigin="0.5,4.3689" OpacityMask="#C6000000" VerticalAlignment="Top" Height="10.004">
+                                    <Grid.RenderTransform>
+                                        <TransformGroup>
+                                            <ScaleTransform ScaleX="0.99999999999999989" ScaleY="0.99999999999999989"/>
+                                            <SkewTransform/>
+                                            <RotateTransform Angle="80"/>
+                                            <TranslateTransform/>
+                                        </TransformGroup>
+                                    </Grid.RenderTransform>
+                                    <Path Fill="#FFFFFF" Stretch="Fill" RenderTransformOrigin="0.5,4.3689" Data="M291.15499,85.897525 C291.15499,85.897525 301.88917,85.87921 301.88917,85.87921 301.88917,85.87921 300.38339,94.355061 300.38339,94.355061 300.38339,94.355061 292.85366,94.355042 292.85366,94.355042 292.85366,94.355042 291.15499,85.897525 291.15499,85.897525 z"/>
+                                </Grid>
+                                <Grid x:Name="block14" RenderTransformOrigin="0.5,4.3689" OpacityMask="#D4000000" VerticalAlignment="Top" Height="10.004">
+                                    <Grid.RenderTransform>
+                                        <TransformGroup>
+                                            <ScaleTransform ScaleX="0.99999999999999989" ScaleY="0.99999999999999989"/>
+                                            <SkewTransform/>
+                                            <RotateTransform Angle="100"/>
+                                            <TranslateTransform/>
+                                        </TransformGroup>
+                                    </Grid.RenderTransform>
+                                    <Path Fill="#FFFFFF" Stretch="Fill" RenderTransformOrigin="0.5,4.3689" Data="M291.15499,85.897525 C291.15499,85.897525 301.88917,85.87921 301.88917,85.87921 301.88917,85.87921 300.38339,94.355061 300.38339,94.355061 300.38339,94.355061 292.85366,94.355042 292.85366,94.355042 292.85366,94.355042 291.15499,85.897525 291.15499,85.897525 z"/>
+                                </Grid>
+                                <Grid x:Name="block15" RenderTransformOrigin="0.5,4.3689" OpacityMask="#E2000000" VerticalAlignment="Top" Height="10.004">
+                                    <Grid.RenderTransform>
+                                        <TransformGroup>
+                                            <ScaleTransform ScaleX="0.99999999999999989" ScaleY="0.99999999999999989"/>
+                                            <SkewTransform/>
+                                            <RotateTransform Angle="119.99999999999999"/>
+                                            <TranslateTransform/>
+                                        </TransformGroup>
+                                    </Grid.RenderTransform>
+                                    <Path Fill="#FFFFFF" Stretch="Fill" RenderTransformOrigin="0.5,4.3689" Data="M291.15499,85.897525 C291.15499,85.897525 301.88917,85.87921 301.88917,85.87921 301.88917,85.87921 300.38339,94.355061 300.38339,94.355061 300.38339,94.355061 292.85366,94.355042 292.85366,94.355042 292.85366,94.355042 291.15499,85.897525 291.15499,85.897525 z"/>
+                                </Grid>
+                                <Grid x:Name="block16" RenderTransformOrigin="0.5,4.3689" OpacityMask="#F0000000" VerticalAlignment="Top" Height="10.004">
+                                    <Grid.RenderTransform>
+                                        <TransformGroup>
+                                            <ScaleTransform/>
+                                            <SkewTransform/>
+                                            <RotateTransform Angle="140"/>
+                                            <TranslateTransform/>
+                                        </TransformGroup>
+                                    </Grid.RenderTransform>
+                                    <Path Fill="#FFFFFF" Stretch="Fill" RenderTransformOrigin="0.5,4.3689" Data="M291.15499,85.897525 C291.15499,85.897525 301.88917,85.87921 301.88917,85.87921 301.88917,85.87921 300.38339,94.355061 300.38339,94.355061 300.38339,94.355061 292.85366,94.355042 292.85366,94.355042 292.85366,94.355042 291.15499,85.897525 291.15499,85.897525 z"/>
+                                </Grid>
+                                <Grid x:Name="block17" RenderTransformOrigin="0.5,4.3689" OpacityMask="Black" VerticalAlignment="Top" Height="10.004">
+                                    <Grid.RenderTransform>
+                                        <TransformGroup>
+                                            <ScaleTransform ScaleX="0.99999999999999989" ScaleY="0.99999999999999989"/>
+                                            <SkewTransform/>
+                                            <RotateTransform Angle="160"/>
+                                            <TranslateTransform/>
+                                        </TransformGroup>
+                                    </Grid.RenderTransform>
+                                    <Path Fill="#FFFFFF" Stretch="Fill" RenderTransformOrigin="0.5,4.3689" Data="M291.15499,85.897525 C291.15499,85.897525 301.88917,85.87921 301.88917,85.87921 301.88917,85.87921 300.38339,94.355061 300.38339,94.355061 300.38339,94.355061 292.85366,94.355042 292.85366,94.355042 292.85366,94.355042 291.15499,85.897525 291.15499,85.897525 z"/>
+                                </Grid>
+                            </Grid>
+                        </Canvas>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--CommandLink Style-->
+    <Style TargetType="controls:CommandLink">
+        <Setter Property="MinWidth" Value="325" />
+        <Setter Property="MinHeight" Value="63" />
+        <Setter Property="Margin" Value="0,0,0,12" />
+        <Setter Property="HorizontalAlignment" Value="Left" />
+        <Setter Property="VerticalAlignment" Value="Top" />
+        <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="controls:CommandLink">
+                    <Border Name="Border" CornerRadius="2" BorderBrush="Transparent" BorderThickness="1"
+                  SnapsToDevicePixels="True" Background="Transparent">
+                        <Border Name="InnerBorder" CornerRadius="2" BorderBrush="Transparent" BorderThickness="1"
+                    SnapsToDevicePixels="True">
+                            <StackPanel Margin="7,7,7,7" Orientation="Horizontal">
+                                <Grid Margin="0,4,5,0" Width="18" Height="20" HorizontalAlignment="Left" VerticalAlignment="Top">
+                                    <Path SnapsToDevicePixels="True" Data="M2,7 L8,7 8,3 15,10 8,17 8,13 2,13 Z" Stroke="#FFFFFF" Fill="#30FFFFFF" />
+                                    <Path x:Name="Shadow" SnapsToDevicePixels="True" Data="M2,7 L8,7 8,3 15,10 8,17 8,13 2,13 Z" Stroke="#FFFFFF" StrokeThickness="2"  Opacity="0">
+                                        <Path.Effect>
+                                            <BlurEffect Radius="5"/>
+                                        </Path.Effect>
+                                    </Path>
+                                </Grid>
+                                <StackPanel Margin="6,0,0,10">
+                                    <TextBlock Name="InstructionText" FontFamily="Segoe UI" FontSize="16" Foreground="#A8A6F1"
+                             Text="{TemplateBinding Content}">
+                                    </TextBlock>
+                                    <TextBlock Name="Note" FontFamily="Segoe UI" FontSize="11" Foreground="#A8A6F1"
+                             Text="{Binding Path=Note, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Button}}}">
+                                    </TextBlock>
+                                </StackPanel>
+                            </StackPanel>
+                        </Border>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <MultiTrigger>
+                            <MultiTrigger.Conditions>
+                                <Condition Property="IsMouseOver" Value="True" />
+                                <Condition Property="IsEnabled" Value="True" />
+                            </MultiTrigger.Conditions>
+                            <Setter TargetName="Shadow" Property="Opacity" Value="1" />
+                        </MultiTrigger>
+                        <MultiTrigger>
+                            <MultiTrigger.Conditions>
+                                <Condition Property="IsPressed" Value="True" />
+                                <Condition Property="IsEnabled" Value="True" />
+                            </MultiTrigger.Conditions>
+                            <Setter TargetName="Shadow" Property="Opacity" Value="1" />
+                        </MultiTrigger>
+                        <MultiTrigger>
+                            <MultiTrigger.Conditions>
+                                <Condition Property="IsDefaulted" Value="True" />
+                                <Condition Property="IsPressed" Value="False" />
+                                <Condition Property="IsMouseOver" Value="False" />
+                            </MultiTrigger.Conditions>
+                            <Setter TargetName="Border" Property="BorderBrush" Value="#60FFFFFF" />
+                            <Setter TargetName="InstructionText" Property="Foreground" Value="#A8A6F1" />
+                            <Setter TargetName="Note" Property="Foreground" Value="#A8A6F1" />
+                        </MultiTrigger>
+                        <MultiTrigger>
+                            <MultiTrigger.Conditions>
+                                <Condition Property="IsKeyboardFocused" Value="True" />
+                                <Condition Property="IsPressed" Value="False" />
+                                <Condition Property="IsMouseOver" Value="False" />
+                            </MultiTrigger.Conditions>
+                            <Setter TargetName="Border" Property="BorderBrush" Value="#60FFFFFF" />
+                            <Setter TargetName="InstructionText" Property="Foreground" Value="#A8A6F1" />
+                            <Setter TargetName="Note" Property="Foreground" Value="#A8A6F1" />
+                        </MultiTrigger>
+                        <MultiTrigger>
+                            <MultiTrigger.Conditions>
+                                <Condition Property="IsEnabled" Value="True" />
+                                <Condition Property="IsDefaulted" Value="True" />
+                            </MultiTrigger.Conditions>
+                            <Setter TargetName="Border" Property="BorderBrush" Value="#10FFFFFF" />
+                        </MultiTrigger>
+                        <MultiTrigger>
+                            <MultiTrigger.Conditions>
+                                <Condition Property="IsEnabled" Value="True" />
+                                <Condition Property="IsKeyboardFocused" Value="True" />
+                            </MultiTrigger.Conditions>
+                            <Setter TargetName="InnerBorder" Property="BorderBrush" Value="#60FFFFFF" />
+                        </MultiTrigger>
+                        <MultiTrigger>
+                            <MultiTrigger.Conditions>
+                                <Condition Property="IsEnabled" Value="True" />
+                                <Condition Property="IsMouseOver" Value="True" />
+                            </MultiTrigger.Conditions>
+                            <Setter TargetName="InnerBorder" Property="Background" Value="#30FFFFFF" />
+                            <Setter TargetName="InstructionText" Property="Foreground" Value="#FFFFFFFF" />
+                            <Setter TargetName="Note" Property="Foreground" Value="#FFFFFFFF" />
+                        </MultiTrigger>
+                        <MultiTrigger>
+                            <MultiTrigger.Conditions>
+                                <Condition Property="IsPressed" Value="True" />
+                                <Condition Property="IsEnabled" Value="True" />
+                            </MultiTrigger.Conditions>
+                            <Setter TargetName="InnerBorder" Property="BorderBrush" Value="#60FFFFFF" />
+                        </MultiTrigger>
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter TargetName="InstructionText" Property="Foreground" Value="#808080" />
+                            <Setter TargetName="Note" Property="Foreground" Value="#808080" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style xmlns:asmsel="clr-namespace:Confuser.AsmSelector"
+        TargetType="{x:Type asmsel:AssemblySelector}"
+           BasedOn="{StaticResource {x:Type TreeView}}">
+        <Style.Resources>
+            <HierarchicalDataTemplate ItemsSource="{Binding Children}" DataType="{x:Type asmsel:AsmTreeModel}">
+                <StackPanel Orientation="Horizontal" Height="18">
+                    <asmsel:AsmIcon Width="16" Height="16" Object="{Binding Object}" Margin="2,0,5,0"/>
+                    <TextBlock x:Name="txt" Foreground="{Binding Object, Converter={x:Static asmsel:AsmColorConverter.Instance}}"
+                               Text="{Binding Object, Converter={x:Static asmsel:AsmTextConverter.Instance}}"
+                               VerticalAlignment="Center" Margin="2,0,5,0"/>
+                </StackPanel>
+                <HierarchicalDataTemplate.Triggers>
+                    <DataTrigger Binding="{Binding IsSelected}" Value="True">
+                        <Setter TargetName="txt" Property="Foreground" Value="{StaticResource SelectedForegroundBrush}"/>
+                    </DataTrigger>
+                </HierarchicalDataTemplate.Triggers>
+            </HierarchicalDataTemplate>
+        </Style.Resources>
+        <Setter Property="ItemContainerStyle">
+            <Setter.Value>
+                <Style TargetType="{x:Type TreeViewItem}" BasedOn="{StaticResource {x:Type TreeViewItem}}">
+                    <Setter Property="IsExpanded" Value="{Binding IsExpanded, Mode=TwoWay}" />
+                    <Setter Property="IsSelected" Value="{Binding IsSelected, Mode=TwoWay}" />
+                    <!--<Style.Triggers>
+                        <DataTrigger Binding="{Binding Object}" Value="{x:Null}">
+                            <Setter Property="Visibility" Value="Collapsed"/>
+                        </DataTrigger>
+                    </Style.Triggers>-->
+                </Style>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style TargetType="{x:Type local:ConfuserTab}">
+        <Setter Property="Background" Value="{StaticResource BackgroundBrush}"/>
+        <!--<Setter Property="Foreground" Value="{StaticResource ForegroundBrush}"/>-->
+    </Style>
+</ResourceDictionary>

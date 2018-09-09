@@ -1,0 +1,120 @@
+﻿<Application
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	x:Class="Confuser.App" StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <!-- Resources scoped at the Application level should be defined here. -->
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Darkness.xaml"/>
+                <!--<ResourceDictionary Source="ExpressionDark.xaml"/>
+                <ResourceDictionary Source="Scroller.xaml"/>-->
+            </ResourceDictionary.MergedDictionaries>
+            <BitmapSource x:Key="icon">Application.ico</BitmapSource>
+            <BitmapSource x:Key="crProj">crProj.ico</BitmapSource>
+            <BitmapSource x:Key="ok">Themes\ok.png</BitmapSource>
+            <BitmapSource x:Key="error">Themes\error.png</BitmapSource>
+            <BitmapSource x:Key="loading">Themes\loading.png</BitmapSource>
+            <BitmapSource x:Key="new">Themes\new.png</BitmapSource>
+            <BitmapSource x:Key="open">Themes\open.png</BitmapSource>
+            <BitmapSource x:Key="save">Themes\save.png</BitmapSource>
+            
+            <BitmapSource x:Key="assembly">AsmSelector\assembly.png</BitmapSource>
+            <BitmapSource x:Key="constant">AsmSelector\constant.png</BitmapSource>
+            <BitmapSource x:Key="constructor">AsmSelector\constructor.png</BitmapSource>
+            <BitmapSource x:Key="delegate">AsmSelector\delegate.png</BitmapSource>
+            <BitmapSource x:Key="enum">AsmSelector\enum.png</BitmapSource>
+            <BitmapSource x:Key="event">AsmSelector\event.png</BitmapSource>
+            <BitmapSource x:Key="famasm">AsmSelector\famasm.png</BitmapSource>
+            <BitmapSource x:Key="field">AsmSelector\field.png</BitmapSource>
+            <BitmapSource x:Key="interface">AsmSelector\interface.png</BitmapSource>
+            <BitmapSource x:Key="internal">AsmSelector\internal.png</BitmapSource>
+            <BitmapSource x:Key="method">AsmSelector\method.png</BitmapSource>
+            <BitmapSource x:Key="module">AsmSelector\module.png</BitmapSource>
+            <BitmapSource x:Key="namespace">AsmSelector\namespace.png</BitmapSource>
+            <BitmapSource x:Key="omethod">AsmSelector\omethod.png</BitmapSource>
+            <BitmapSource x:Key="private">AsmSelector\private.png</BitmapSource>
+            <BitmapSource x:Key="property">AsmSelector\property.png</BitmapSource>
+            <BitmapSource x:Key="propget">AsmSelector\propget.png</BitmapSource>
+            <BitmapSource x:Key="propset">AsmSelector\propset.png</BitmapSource>
+            <BitmapSource x:Key="protected">AsmSelector\protected.png</BitmapSource>
+            <BitmapSource x:Key="static">AsmSelector\static.png</BitmapSource>
+            <BitmapSource x:Key="type">AsmSelector\type.png</BitmapSource>
+            <BitmapSource x:Key="valuetype">AsmSelector\valuetype.png</BitmapSource>
+
+            <Canvas x:Key="info" x:Shared="False" Width="48" Height="48" ClipToBounds="False">
+                <Canvas.Resources>
+                    <LinearGradientBrush x:Key="linearGradient4873" MappingMode="RelativeToBoundingBox" StartPoint="0,0" EndPoint="1,1">
+                        <GradientStop Color="#FFFFFFFF" Offset="0"/>
+                        <GradientStop Color="#00FFFFFF" Offset="1"/>
+                    </LinearGradientBrush>
+                    <LinearGradientBrush x:Key="linearGradient2704" MappingMode="Absolute" StartPoint="62.745731,-13.444987" EndPoint="62.608765,7.1072145">
+                        <GradientStop Color="#FFFFFFFF" Offset="0"/>
+                        <GradientStop Color="#00FFFFFF" Offset="1"/>
+                        <LinearGradientBrush.Transform>
+                            <!--linearGradient-->
+                            <MatrixTransform Matrix="2.3440063,0,0,2.3440063,-121.79862,31.22942"/>
+                        </LinearGradientBrush.Transform>
+                    </LinearGradientBrush>
+                    <LinearGradientBrush x:Key="linearGradient3811" MappingMode="RelativeToBoundingBox" StartPoint="0,0" EndPoint="1,1">
+                        <GradientStop Color="#FF204A87" Offset="0"/>
+                        <GradientStop Color="#FF3465A4" Offset="1"/>
+                    </LinearGradientBrush>
+                    <LinearGradientBrush x:Key="linearGradient3927" MappingMode="Absolute" StartPoint="15.046636,44.787998" EndPoint="15.046636,3.8851264">
+                        <GradientStop Color="#FF204A87" Offset="0"/>
+                        <GradientStop Color="#FF3465A4" Offset="1"/>
+                        <LinearGradientBrush.Transform>
+                            <!--linearGradient-->
+                            <MatrixTransform Matrix="1.0805272,0,0,1.0805026,-1.5082857,-3.3507598"/>
+                        </LinearGradientBrush.Transform>
+                    </LinearGradientBrush>
+                    <LinearGradientBrush x:Key="linearGradient5106" MappingMode="RelativeToBoundingBox" StartPoint="0,0" EndPoint="1,1">
+                        <GradientStop Color="#FF8FB3D9" Offset="0"/>
+                        <GradientStop Color="#FF729FCF" Offset="0.25288007"/>
+                        <GradientStop Color="#FF3465A4" Offset="0.68271071"/>
+                        <GradientStop Color="#FF204A87" Offset="1"/>
+                    </LinearGradientBrush>
+                    <RadialGradientBrush x:Key="radialGradient2707" MappingMode="Absolute" Center="62.202274,-5.7132163" GradientOrigin="62.202274,-5.7132163" RadiusX="9.7552835" RadiusY="9.7552835">
+                        <GradientStop Color="#FF8FB3D9" Offset="0"/>
+                        <GradientStop Color="#FF729FCF" Offset="0.25288007"/>
+                        <GradientStop Color="#FF3465A4" Offset="0.68271071"/>
+                        <GradientStop Color="#FF204A87" Offset="1"/>
+                        <RadialGradientBrush.Transform>
+                            <!--radialGradient-->
+                            <MatrixTransform Matrix="-7.565785,-6.219707e-7,3.9644633e-7,-4.8230546,494.60904,-26.555114"/>
+                        </RadialGradientBrush.Transform>
+                    </RadialGradientBrush>
+                    <LinearGradientBrush x:Key="linearGradient10691" MappingMode="RelativeToBoundingBox" StartPoint="0,0" EndPoint="1,1">
+                        <GradientStop Color="#FF000000" Offset="0"/>
+                        <GradientStop Color="#00000000" Offset="1"/>
+                    </LinearGradientBrush>
+                    <RadialGradientBrush x:Key="radialGradient3080" MappingMode="Absolute" Center="6.702713,73.615715" GradientOrigin="6.702713,73.615715" RadiusX="7.228416" RadiusY="7.228416">
+                        <GradientStop Color="#FF000000" Offset="0"/>
+                        <GradientStop Color="#00000000" Offset="1"/>
+                        <RadialGradientBrush.Transform>
+                            <!--radialGradient-->
+                            <ScaleTransform ScaleX="1.902215" ScaleY="0.525703"/>
+                        </RadialGradientBrush.Transform>
+                    </RadialGradientBrush>
+                </Canvas.Resources>
+                <Canvas>
+                    <Path Fill="{StaticResource radialGradient3080}" StrokeThickness="1" StrokeMiterLimit="4" StrokeDashOffset="0" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" Data="M 26.5 38.700001 A 13.75 3.8 0 1 1 -1 38.700001 A 13.75 3.8 0 1 1 26.5 38.700001 z">
+                        <!--path-->
+                        <Path.RenderTransform>
+                            <MatrixTransform Matrix="1.6,0,0,1.8421053,3.6000003,-30.289477"/>
+                        </Path.RenderTransform>
+                    </Path>
+                    <Path Fill="{StaticResource radialGradient2707}" Stroke="{StaticResource radialGradient2707}" StrokeThickness="1" StrokeMiterLimit="4" Data="M 45.499979 22.999239 C 45.499979 34.87373 35.873401 44.49998 24.000271 44.49998 C 12.126053 44.49998 2.5000203 34.873621 2.5000203 22.999239 C 2.5000203 11.12529 12.126053 1.5000199 24.000271 1.5000199 C 35.873401 1.5000199 45.499979 11.12529 45.499979 22.999239 L 45.499979 22.999239 z"/>
+                    <Path Stroke="{StaticResource linearGradient2704}" StrokeThickness="1" StrokeMiterLimit="4" Data="M 44.49904 22.999272 C 44.49904 34.321462 35.320423 43.499975 23.999791 43.499975 C 12.678124 43.499975 3.5000253 34.321356 3.5000253 22.999272 C 3.5000253 11.677606 12.678124 2.5000249 23.999791 2.5000249 C 35.320423 2.5000249 44.49904 11.677606 44.49904 22.999272 L 44.49904 22.999272 z"/>
+                    <Path Fill="#FFFFFFFF" StrokeThickness="1" StrokeMiterLimit="4" StrokeLineJoin="Round" StrokeStartLineCap="Round" StrokeEndLineCap="Round" Data="M 25.75 33.5 L 29 33.5 L 29 36 L 19 36 L 19 33.5 L 22.25 33.5 L 22.25 20.5 L 19 20.5 L 19 18 L 25.75 18 L 25.75 33.5 z"/>
+                    <Path Fill="#FFFFFFFF" StrokeThickness="1" StrokeMiterLimit="4" StrokeLineJoin="Round" StrokeStartLineCap="Round" StrokeEndLineCap="Round" Data="M 20.668958 34.547359 A 2.2272584 2.4054391 0 1 1 16.214442 34.547359 A 2.2272584 2.4054391 0 1 1 20.668958 34.547359 z">
+                        <!--path-->
+                        <Path.RenderTransform>
+                            <MatrixTransform Matrix="1.3469474,0,0,1.2471735,-0.8399997,-31.086551"/>
+                        </Path.RenderTransform>
+                    </Path>
+                </Canvas>
+            </Canvas>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
